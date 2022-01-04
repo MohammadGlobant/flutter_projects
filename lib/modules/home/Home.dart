@@ -4,7 +4,12 @@ import '../messenger/Messenger.dart';
 import '../../model/HomeItems.dart';
 import '../../model/project_links.dart';
 
-class Home extends StatelessWidget{
+class Home extends StatefulWidget{
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
   List<HomeItems> items = [
     HomeItems(name: "Globant", url: links.globantImage),
     HomeItems(name: "Ibrahimovic", url: links.ibraImage),
